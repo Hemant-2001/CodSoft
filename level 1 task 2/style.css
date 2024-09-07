@@ -1,0 +1,214 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color:lightblue;
+}
+
+/* Navigation Styles */
+nav {
+    background-color:whitesmoke;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.nav-container .logo {
+    text-decoration: none;
+    color:black;
+    font-size: 1.2rem;
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-container ul li {
+    margin-left: 2rem;
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.nav-container ul li a:hover {
+    color:#f39c12;
+}
+
+
+/* Header Styles */
+header {
+    background: url('your-header-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.header-left h1 {
+    font-size: 2.5rem;
+}
+
+.header-left p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.header-left .name span {
+    color: #f39c12;
+}
+
+.header-action-aria {
+    margin-top: 2rem;
+}
+
+.header-action-aria .btn {
+    padding: 0.8rem 2rem;
+    margin-right: 1rem;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+    transition: background-color 0.3s;
+}
+
+.header-action-aria .btn:hover {
+    background-color: #555;
+}
+
+.header-right img{
+    width: 50%;
+    border: 3px solid black;
+}
+
+
+/* Section Styles */
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+section h1 span {
+    color: #f39c12;
+}
+
+.about-container, .skills-container, .contact-container {
+    width: 90%;
+    margin: auto;
+}
+
+.about-content, .skills-container, .contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about-article, .skill-article, .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    width: 22%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.about-article:hover, .skill-article:hover, .card:hover {
+    transform: scale(1.05);
+}
+
+.about-article img, .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Blog Section */
+#Blog .content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    width: 45%;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    gap: 1rem;
+}
+
+form input, form textarea, form button {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
